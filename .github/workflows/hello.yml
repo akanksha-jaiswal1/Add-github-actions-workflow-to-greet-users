@@ -13,6 +13,7 @@ on:
   #paths - it will run only if the condition matches
     paths:
       - '**.html'
+      - '**.yml'
 
 #these are jobs insode the workflow
 jobs:
