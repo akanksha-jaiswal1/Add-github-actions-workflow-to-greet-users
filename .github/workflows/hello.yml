@@ -3,9 +3,16 @@ name: Hello
 
 #runs on a trigger
 on:
-  workflow_dispatch: 
-  #push:
-  #  branches: [main]
+  #workflowdispatch - when we manually run the action
+  #workflow_dispatch: 
+
+  #push - it will automaticall ruun the action
+  push:
+    branches: [main]
+
+  #paths - it will run only if the condition matches
+    paths:
+      - '**.html'
 
 #these are jobs insode the workflow
 jobs:
