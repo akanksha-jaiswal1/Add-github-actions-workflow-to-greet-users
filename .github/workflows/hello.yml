@@ -14,8 +14,8 @@ jobs:
     #this is github runner
     runs-on: ubuntu-latest
     steps:
-      -name: say hello to user
-       run: echo "Hello User"
+      - name: say hello to user
+        run: echo "Hello User"
 
-      -name: say hello to username
-       run: echo "Hello $USER"
+      - name: say hello to username
+        run: echo "Hello $USER"
